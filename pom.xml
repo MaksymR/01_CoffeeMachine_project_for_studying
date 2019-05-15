@@ -7,6 +7,32 @@
     <groupId>org.hyperskill</groupId>
     <artifactId>CoffeeMachine</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven.compiler.plugin.configuration>11</maven.compiler.plugin.configuration>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- Place for project's dependencies -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${maven.compiler.plugin.configuration}</source>
+                    <target>${maven.compiler.plugin.configuration}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <url>http://maven.apache.org</url>
 
 
 </project>
